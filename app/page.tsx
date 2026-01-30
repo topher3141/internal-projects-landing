@@ -15,7 +15,7 @@ const projects = [
     name: "Retailogic",
     desc: "Ops + internal tooling suite",
     href: "https://www.retailogic.dev/",
-    logo: "/retailogic.png",
+    logo: "/RETAILogic.png",
   },
 ];
 
@@ -47,9 +47,6 @@ export default function Page() {
             </p>
           </div>
 
-          <div style={{ fontSize: 12, color: "#666" }}>
-            Need access? Ask your manager.
-          </div>
         </header>
 
         <div
@@ -77,28 +74,29 @@ export default function Page() {
                 transition: "transform 120ms ease",
               }}
             >
-              <div
-                style={{
-                  height: 140,
-                  borderRadius: 14,
-                  border: "1px solid #f0f0f0",
-                  background:
-                    "linear-gradient(180deg, #ffffff 0%, #fafafa 100%)",
-                  display: "grid",
-                  placeItems: "center",
-                  overflow: "hidden",
-                }}
-              >
-                <img
-                  src={p.logo}
-                  alt={p.name}
-                  style={{
-                    width: "85%",
-                    height: "85%",
-                    objectFit: "contain",
-                  }}
-                />
-              </div>
+<div
+  style={{
+    aspectRatio: "1 / 1",
+    borderRadius: 16,
+    border: "1px solid #f0f0f0",
+    background: "#fff",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 18,
+  }}
+>
+  <img
+    src={p.logo}
+    alt={p.name}
+    style={{
+      width: "100%",
+      height: "100%",
+      objectFit: "contain",
+    }}
+  />
+</div>
+
 
               <h2 style={{ margin: "12px 0 6px 0", fontSize: 18 }}>
                 {p.name}
